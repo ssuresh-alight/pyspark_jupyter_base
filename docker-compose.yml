@@ -1,0 +1,7 @@
+services:
+  jupyter:
+    image: jupyter/pyspark-notebook
+    container_name: notebook
+    ports:
+      - 8888:8888
+    command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
