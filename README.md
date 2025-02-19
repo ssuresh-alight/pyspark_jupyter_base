@@ -4,7 +4,7 @@ Running Jupyter notebook for testing out PySpark running in Docker compose.
 
 ## How to run
 
-Start it up on [localhost](http://localhost:8888):
+Start up the Jupyter server on http://localhost:8888
 
 ```sh
 docker compose up --build
@@ -21,6 +21,10 @@ Install the Python, Jupyter notebook, PyLance extensions in VSCode.
 Open `.ipynb` notebook.
 
 Connect to kernel using command: `Notebook: Select Notebook Kernel` -> `Select another kernel` -> `Existing Jupyter Server` -> `Enter the URL` -> enter `http://localhost:8888`
+
+### Spark UI
+
+Access Spark UI at http://localhost:4040
 
 ## Known issues
 

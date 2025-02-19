@@ -4,4 +4,5 @@ services:
     container_name: notebook
     ports:
       - 8888:8888
+      - 4040:4040
     command: "start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''"
