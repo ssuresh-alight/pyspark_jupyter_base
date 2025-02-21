@@ -2,6 +2,8 @@ services:
   jupyter:
     image: quay.io/jupyter/pyspark-notebook
     container_name: notebook
+    volumes:
+      - ./work:/home/jovyan/work
     ports:
       - 8888:8888
       - 4040:4040

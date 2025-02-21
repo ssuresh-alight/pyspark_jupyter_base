@@ -33,3 +33,11 @@ Access Spark UI at http://localhost:4040
 
 2. Bind mounting `./work` not working in WSL2
     Changes made to `work` directory in neither host nor container are persisted/visible in each other. This is with Rancher Desktop + WSL2 Ubuntu Linux. When running the code from Windows filesystem using `docker compose`, this issue seems to be not present.
+
+    **Fix:** This seems to be a Rancher Desktop bug. Make sure your Windows `C:\` drive is mounted to `/mnt/c/` instead of something like `/c/` in WSL2.
+    Remove any `[automount] root` settings from `/etc/wsl.conf`.
+
+    See:
+    
+    - https://learn.microsoft.com/en-us/windows/wsl/wsl-config#automount-settings
+    - https://github.com/rancher-sandbox/rancher-desktop/issues/3047
