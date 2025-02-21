@@ -26,6 +26,10 @@ Connect to kernel using command: `Notebook: Select Notebook Kernel` -> `Select a
 
 Access Spark UI at http://localhost:4040
 
+### Generate Data
+
+Use the `generate_data.ipynb` notebook to generate data files - tweak params as needed
+
 ## Known issues
 
 1. `Import "pyspark.sql" could not be resolved` warning for the import
